@@ -14,8 +14,8 @@ const Listing: FC<ListingProps> = ({ job }) => {
     <div className="bg-white container h-full shadow-[-9px_0_0_0px] shadow-teal-600/80 rounded relative desktop:h-36 bg desktop:flex desktop:flex-row desktop:mb:20">
       <Image
         className="absolute -top-10 left-5 desktop:top-5"
-        width={100}
-        height={100}
+        width={10}
+        height={10}
         src={job.logo}
         alt={photoSnap}
       />
