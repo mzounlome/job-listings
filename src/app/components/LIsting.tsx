@@ -9,15 +9,15 @@ import Image from "next/image";
 import photoSnap from "../images/photosnap.svg";
 
 const Listing: FC<ListingProps> = ({ job }) => {
-  console.log(job);
+  // console.log(job);
   return (
-    <div className="bg-white container h-full shadow-[-9px_0_0_0px] shadow-teal-600/80 rounded relative desktop:h-36 bg desktop:flex desktop:flex-row desktop:mb:20">
+    <div className=" bg-white container h-full shadow-[-9px_0_0_0px] shadow-teal-600/80 rounded relative mt-32 desktop:h-36 bg desktop:flex desktop:flex-row desktop:mt-10">
       <Image
         className="absolute -top-10 left-5 desktop:top-5"
-        width={10}
-        height={10}
+        width={80}
+        height={80}
         src={job.logo}
-        alt={photoSnap}
+        alt="logo"
       />
       <div className="container  h-3/5 p-2 flex flex-col justify-around mt-12 desktop:h-full desktop:mt-0">
         <div className="flex flex-wrap justify-between  container px-4 desktop:ml-32 mt-10    desktop:w-3/5 ">

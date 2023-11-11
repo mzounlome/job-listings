@@ -1,16 +1,18 @@
 "use client";
-import { FC, useState } from "react";
-import jobs from "../data";
+import { FC } from "react";
+// import jobs from "../data";
 import Listing from "./LIsting";
 import { jobListing } from "./types";
 
-interface JobListProps {}
+interface JobListProps {
+  jobs: any;
+}
 
-const JobList: FC<JobListProps> = ({}) => {
-  console.log(jobs);
+const JobList: FC<JobListProps> = ({ jobs }) => {
+  // console.log(jobs);
   return (
-    <div className="w-10/12 h-80 mb-10">
-      {jobs.map((job) => (
+    <div className="w-10/12 h-80 ">
+      {jobs.map((job: any) => (
         <Listing job={job} key={job.id} />
       ))}
     </div>
